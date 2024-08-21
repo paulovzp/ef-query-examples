@@ -1,0 +1,2 @@
+/opt/mssql-tools/bin/sqlcmd -S sqlserver -U sa -P @PWD_DATABASE -d master -i /tmp/01-create-database.sql
+/opt/mssql-tools/bin/sqlcmd -S sqlserver -U sa -P @PWD_DATABASE -d master -i /tmp/02-load-database.sql
