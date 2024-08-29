@@ -16,7 +16,7 @@ public class EFQQueryContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         //optionsBuilder.UseSqlServer("Data Source=172.20.0.2;Initial Catalog=EFQueryDB;Persist Security Info=True;User ID=sa;Password=@PWD_DATABASE;Connection Timeout=10000");
-        optionsBuilder.UseSqlServer("Server=localhost;Database=EFQueryDB;User Id=sa;Password=@PWD_DATABASE;TrustServerCertificate=True");
+        optionsBuilder.UseSqlServer("Server=localhost;Database=EFQueryDB;User Id=sa;Password=@PWD-DATABASE!9;TrustServerCertificate=True");
     }
 
     protected override void OnModelCreating(ModelBuilder builder)

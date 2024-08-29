@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>EF.Queries.Repositories.CountryRepository-20240829-200147</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.14.0, Windows 10 (10.0.19045.4780/22H2/2022Update)
+Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
+.NET SDK 8.0.400
+  [Host]     : .NET 8.0.8 (8.0.824.36612), X64 RyuJIT AVX2
+  DefaultJob : .NET 8.0.8 (8.0.824.36612), X64 RyuJIT AVX2
+</code></pre>
+<pre><code>Job=DefaultJob  
+</code></pre>
+
+<table>
+<thead><tr><th>Method       </th><th>Mean</th><th>Error</th><th>Median</th><th>Gen0</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>GetCountries</td><td>998.7 &mu;s</td><td>26.15 &mu;s</td><td>968.8 &mu;s</td><td>7.8125</td><td>54.88 KB</td>
+</tr><tr><td>GetColumnsCountries</td><td>1,189.2 &mu;s</td><td>57.00 &mu;s</td><td>1,145.6 &mu;s</td><td>11.7188</td><td>72.59 KB</td>
+</tr></tbody></table>
+</body>
+</html>

@@ -24,6 +24,10 @@ public class CountryRepository
     public List<Country> GetColumnsCountries()
     {
         return (from country in _context.Set<Country>()
-                select country).ToList();
+                select new Country
+                {
+                    Name = country.Name,
+                    Id = country.Id
+                }).ToList();
     }
 }

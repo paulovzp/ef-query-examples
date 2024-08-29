@@ -1,8 +1,5 @@
 ﻿using BenchmarkDotNet.Running;
-using EF.Queries.Entities;
 using EF.Queries.Repositories;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 
 namespace EF.Queries
 {
