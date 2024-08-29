@@ -2,7 +2,7 @@ services:
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2019-latest
     environment:
-      SA_PASSWORD: "@PWD_DATABASE"
+      SA_PASSWORD: "@PWD-DATABASE!9"
       ACCEPT_EULA: "Y"
       MSSQL_PID: "Developer"
     ports:
@@ -14,6 +14,5 @@ services:
       - sqlserver
     volumes:
       - ./01-create-database.sql:/tmp/01-create-database.sql
-      - ./02-load-database.sql:/tmp/02-load-database.sql
       - ./init-base.sh:/tmp/init-base.sh
     command: /bin/bash ./tmp/init-base.sh
